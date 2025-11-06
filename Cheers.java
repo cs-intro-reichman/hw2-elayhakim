@@ -15,9 +15,13 @@ public class Cheers {
                 String anwords = "AaEeFfHhIiLlMmNnOoRrSsXx";
                 while (i < name.length()){
                         if(anwords.indexOf(name.charAt(i)) != -1){
-                                System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                                if(name.charAt(i)%2==1){
+                                        System.out.println("Give me an " + (name.charAt(i)-32) + ": " + (name.charAt(i)-32) + "!");
+                                }else{
+                                        System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                                }
                         }else{
-                                System.out.println("Give me a " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                                System.out.println("Give me a  " + name.charAt(i) + ": " + name.charAt(i) + "!");
                         }
                         i++;
                 }
