@@ -13,15 +13,20 @@ public class Cheers {
                 int i = 0;
                 String firstlet = "" + name.charAt(0);
                 String anwords = "AaEeFfHhIiLlMmNnOoRrSsXx";
+                String little = "abcdefghijklmnopqrstuvwxyz";
                 while (i < name.length()){
                         if(anwords.indexOf(name.charAt(i)) != -1){
-                                if(name.charAt(i)%2==1){
+                                if(little.indexOf(name.charAt(i)) != -1){
                                         System.out.println("Give me an " + (name.charAt(i)-32) + ": " + (name.charAt(i)-32) + "!");
                                 }else{
                                         System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
                                 }
                         }else{
-                                System.out.println("Give me a  " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                                if(little.indexOf(name.charAt(i)) != -1){
+                                        System.out.println("Give me a  " + (name.charAt(i)-32) + ": " + (name.charAt(i)-32) + "!");
+                                }else{
+                                        System.out.println("Give me a  " + name.charAt(i) + ": " + name.charAt(i) + "!");
+                                }
                         }
                         i++;
                 }
