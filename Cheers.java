@@ -17,13 +17,13 @@ public class Cheers {
                 while (i < name.length()){
                         if(anwords.indexOf(name.charAt(i)) != -1){
                                 if(little.indexOf(name.charAt(i)) != -1){
-                                        System.out.println("Give me an " + (name.charAt(i)-32) + ": " + (name.charAt(i)-32) + "!");
+                                        System.out.println("Give me an " + (char)(name.charAt(i)-32) + ": " + (char)(name.charAt(i)-32) + "!");
                                 }else{
                                         System.out.println("Give me an " + name.charAt(i) + ": " + name.charAt(i) + "!");
                                 }
                         }else{
                                 if(little.indexOf(name.charAt(i)) != -1){
-                                        System.out.println("Give me a  " + (name.charAt(i)-32) + ": " + (name.charAt(i)-32) + "!");
+                                        System.out.println("Give me a  " + (char)(name.charAt(i)-32) + ": " + (char)(name.charAt(i)-32) + "!");
                                 }else{
                                         System.out.println("Give me a  " + name.charAt(i) + ": " + name.charAt(i) + "!");
                                 }
