@@ -1,3 +1,11 @@
+/*
+Feedback:
+Great work!
+Yam
+*/
+
+
+
 // Demonstrates the Collatz conjecture.
 public class Collatz {
 	public static void main(String args[]) {
@@ -30,3 +38,4 @@ public class Collatz {
 				System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
 	}
 }
+
